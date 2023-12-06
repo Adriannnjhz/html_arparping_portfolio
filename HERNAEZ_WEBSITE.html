@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: 'Inter', sans-serif; overflow-x: hidden; margin: 0; padding: 0;">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERNAEZ WEBSITE ARP ARP</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            scroll-snap-align: start;
+        }
+
+        .top-banner-content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .banner-title-word {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+            font-family: 'courier', sans-serif;
+            font-size: 120px;
+            font-weight: 600;
+            color: antiquewhite;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .video {
+            content: '';
+            display: flex;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        
+        .video::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+            pointer-events: none;
+        }
+
+        .back-video {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+        }
+
+        .boxer, .about-me {
+            background-color: #020122;
+            color: antiquewhite;
+            text-align: center;
+        }
+        
+        .boxer h2, .content-starter {
+            color: rgb(148, 58, 9);
+            margin-bottom: 30px;
+            font-family: 'courier', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+        }
+        .boxer-2, .about-me-2 {
+            background-color: #F95738;
+            text-align: center;
+        }
+        
+        .boxer-2 h2, .content-title {
+            color: #020122;
+            margin-bottom: 30px;
+            font-family: 'courier', sans-serif;
+            font-size: 70px;
+            font-weight: 600;
+        }
+        .congrats-me-box {
+            background-color: #020122;
+            color: antiquewhite;
+            text-align: center;
+        }
+        .hall-of-fame {
+            background-color: #F4D35E;
+            color: antiquewhite;
+            text-align: center;
+        }
+        .boxer-3 {
+            color: antiquewhite;
+            align-items: center;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            
+        }
+
+
+
+        .about-the-author {
+            flex-direction: row;
+            position: relative;
+            width: 100%;                        
+        }
+
+        .column {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .column-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            flex-direction: column;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .content-title {
+            position: absolute;
+            margin-bottom: 20px;
+            font-size: 70px;
+            font-weight: 600;
+            color:rgb(148, 58, 9);
+            overflow: hidden;
+
+        }
+
+        .content-p {
+            position: relative;
+            font-family: 'courier', sans-serif;
+            font-weight: 600;
+            color: #020122;
+            margin-top: 150px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.5em;
+        }
+        .content-dotters {
+            position: absolute;
+            margin-top: 300px;
+            font-size: 70px;
+            font-weight: 600;
+            color:rgb(148, 58, 9);
+            overflow: hidden;
+
+        }
+
+        .bg-color {
+            background-color: antiquewhite;
+            display: flex; 
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        .column-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .img-size {
+            position: absolute;
+            width: 100%;
+            height: 110%;
+            object-fit: contain;
+            background-color: antiquewhite;
+            overflow: hidden;
+        }
+        .img-size-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            align-items: center;
+            background-color: #F4D35E;
+            overflow: hidden;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <section class="banner top-banner">
+        <div class="top-banner-content">
+            <h1 class="banner-title-word">MY PORTFOLIO :pp</h1>
+            <div class="video">
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="chinese-traditional-house-mountains-river-moewalls-com.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="boxer">
+            <h2 class="content-starter">my name is adrian hernaez :>></h2>
+        </div>
+    </section>
+
+    <section class="about-me-2">
+        <div class="boxer-2">
+            <h2 class="content-starter">a little info about me is| </h2>
+        </div>
+    </section>
+
+
+    <section class="about-the-author">
+        <div class="column left">
+            <div class="column-text">
+                <h2 class="content-title">for personal| </h2>
+                <p class="content-p">
+                    I am Adrian Hernaez, <br>
+                    A soul of two decades, <br>
+                    Living in quaint side street, <br>
+                    while shouldering ten kitties. <br>
+                </p>
+                <h2 class="content-dotters">... </h2>
+            </div>
+            <div class="bg-color"></div>
+        </div>
+        <div class="column right">
+            <div class="column-img">
+                <img src="img4.jpg" class="img-size" />
+            </div>
+
+        </div>
+    </section>
+    <section class="about-the-author">
+        <div class="column left">
+            <div class="column-img">
+                <img src="img3.jpg" class="img-size" />
+            </div>
+
+        </div>
+        <div class="column right">
+            <div class="column-text">
+                <h2 class="content-title">my hobbies for now| </h2>
+                <p class="content-p">
+                    I like playing games. <br>
+                    Been watching kdrama too, <br>
+                    Basically a couch potato. <br>
+                </p>
+                <h2 class="content-dotters">... </h2>
+            </div>
+            <div class="bg-color"></div>
+        </div>
+    </section>
+    <section class="congrats-me-box">
+        <div class="boxer-4">
+            <h2 class="content-starter">thank you (o^U^o) </h2>
+            <h3 class="content-starter">!!!!! </h3>
+        </div>
+    </section>
+    <section class="hall-of-fame">
+        <div class="video">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="autumn-bedroom-moewalls-com.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+</html>
